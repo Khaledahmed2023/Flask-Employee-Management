@@ -42,6 +42,8 @@ Before running the application, ensure you have the following dependencies insta
     ```
 6. Run the Flask migrations to create and seed the database:
     ```
+    flask db init
+    flask db migrate
     flask db upgrade
     flask db-seed
     ```
