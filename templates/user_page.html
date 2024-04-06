@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="person-container">
+        <div class="person-picture">
+            <img src="https://source.unsplash.com/featured/?people" alt="{{ user.name }}">
+        </div>
+        <div class="person-profile">
+            <h1>{{ user.name }}</h1>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Phone:</strong> {{ user.phone }}</p>
+            <p><strong>Age:</strong> {{ user.age }}</p>
+            <p><strong>Country:</strong> {{ user.country}}</p>
+            <p><strong>Username:</strong> {{ user.username}}</p>
+        </div>
+    </div>
+{% endblock %}
+
